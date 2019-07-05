@@ -1,0 +1,161 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+<head>    
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+
+     <title>Tancy's HomePage</title>
+
+     <style type="text/css">
+        * { margin: 0; padding: 0; }
+        body { font: 16px Helvetica, Sans-Serif; line-height: 24px; background: url(images/noise.jpg); }
+        .clear { clear: both; }
+        #page-wrap { width: 800px; margin: 40px auto 60px; }
+        #pic { float: right; margin: -30px 0 0 0; }
+        h1 { margin: 0 0 16px 0; padding: 0 0 16px 0; font-size: 42px; font-weight: bold; letter-spacing: -2px; border-bottom: 1px solid #999; }
+        h2 { font-size: 20px; margin: 0 0 6px 0; position: relative; }
+        h2 span {bottom: 0; font-style: italic; font-family: Georgia, Serif; font-size: 16px; color: #999; font-weight: normal; }
+        p { margin: 0 0 16px 0; }
+        a { color: #999; text-decoration: none; border-bottom: 1px dotted #999; }
+        a:hover { border-bottom-style: solid; color: black; }
+        ul { margin: 0 0 32px 17px; }
+        #objective { width: 500px; float: left; }
+        #objective p { font-family: Georgia, Serif; font-style: italic; color: #666; }
+        dt { font-style: italic; font-weight: bold; font-size: 18px; text-align: right; padding: 0 26px 0 0; width: 150px; float: left; height: 100px; border-right: 1px solid #999;  }
+        dd { width: 600px; float: right; }
+        dd.clear { float: none; margin: 0; height: 15px; }
+     </style>
+
+</head>
+
+<body>
+
+    <div id="page-wrap">
+    
+        <img src="images/summer2.jpg" alt="Photo of Cthulu" id="pic" height="206" width="200"/>
+    
+        <div id="contact-info" class="vcard">
+        
+            <!-- Microformats! -->
+        
+            <h1 class="fn">Xi Tan</h1>
+        
+            <p>
+                Cell: <span class="tel">(+86)15600036188</span><br />
+                Address: <span class="address">NORTH SECTION OF YIYUA C1, NO.65, XINGXINGKOU ROAD, HAIDIAN, BEIJING, CHINA</span><br />
+                Email: <a class="email" href="mailto:mintancy@hotmail.com">mintancy@hotmail.com</a><br />  
+            </p>
+        </div>
+                
+        <div id="objective">
+            <p>
+                I am an energetic learner.
+            </p>
+        </div>
+        
+        <div class="clear"></div>
+        
+        <dl>
+            <dd class="clear"></dd>
+            
+            <dt>Education</dt>
+            <dd>
+                <p><strong>M.S. in <a href='http://www.iie.ac.cn/'>Institute of Information Engineering(IIE)</a>, <a href='http://www.ucas.ac.cn/'>Chinese Academy of Sciences</a></strong> - <em>Beijing, China 09/2016 - Present</em><br />
+                    <strong>Advisor:</strong> Bibo Tu<br />
+                    <strong>GPA:</strong> 3.55/4.00<br />
+                    <strong>Awards:</strong> Scholarships, Merit Student(2017)</p>
+                <p><strong>B.S. in <a href='http://ccst.jlu.edu.cn/'>College of Computer Science and Technology</a>, <a href='https://www.jlu.edu.cn/'>Jilin University</a></strong> - <em>Changchun, Jilin, China 09/2012-06/2016</em><br />
+                    <strong>Major:</strong> Computer Science and Technology (Network and Information Security)<br />
+                    <!-- <strong>GPA:</strong> 3.16/4.00<br /> -->
+                    <strong>Awards: </strong>In-hospital scholarships(each year); The winner of the "TW@JLUCTF2015" and "JluCTF2015" (2015)
+                </p>
+            </dd>
+            
+            <dd class="clear"></dd>
+            
+            <dt>Research Projects & Achievements</dt>
+            <dd>
+                <h2>VMI-based Intrusion Detection System(VIDS) &nbsp;&nbsp;&nbsp;&nbsp;<span>07/2017 - Present</span></h2>
+                <ul id="ulDetail">
+                    <li>Analyzed kernel-based rootkits and learned about VMI</li>
+                    <li>Built a system contains VMI tools to detect rootkit activities(process-hiding, modules-hiding, Hooks, etc) for Linux and Windows VMs without agent by using VMI and forensic technologies.</li>
+                    <li><strong>Patent: </strong>A method and a system for virtual machine malware behavior detection (submitted, Chinese, 2018) </li>
+                </ul>
+                
+                <h2>Cloud Security Monitoring Center &nbsp;&nbsp;&nbsp;&nbsp;<span>01/2018 - Present</span></h2>
+                <ul id="ulDetail">
+                    <li>Analyzed the constructures and functions of Intrusion Detection.</li>
+                    <li>Designed an <strong>architecture</strong> which combines HIDS, NIDS, and VIDS to monitor the whole cloud environment, including the VMs, servers, and networks. Then Developted a Data Visualization Platform to express the status of the monitor system.</li>
+                    <li>Next step: Planning to add evil file detection module in the VIDS to enhance detect ability.</li>
+                    <li><strong>Paper: </strong>Monitoring in cloud envornment (preparing, Chinese, 2018)</li>        
+                </ul>
+
+                <h2>Image-based Data Encryption Steganography and Forensics &nbsp;&nbsp;&nbsp;&nbsp;<span>01/2016 - 06/2016</span></h2>
+                <ul id="ulDetail">
+                    <li><strong>Bachelor’s Thesis</strong></li>
+                    <li>Embedding and extracting information from images by using bit operation and improved LSB algorithm.</li>
+                </ul>
+
+                <h2>Online Experiment System Based on Hybird Virtualization</h2> <h2><span>04/2015 - 04/2016</span></h2>
+                <ul id="ulDetail">
+                    <li>Primary principal of this project (University Student Innovation Training Program).</li>
+                    <li>Researched LXC, Hypervisor and other virtualization, and learn KVM and Docker&#39;s core architectures, then built a virtualization platform based on both to achieve the distribution and control of containers.</li>
+                    <li><strong>Paper: </strong>Wen-lin Y, <strong>Xi T</strong>, Jun-ting G, Shuo W. <a href="http://kns.cnki.net/KCMS/detail/detail.aspx?dbcode=CJFQ&dbname=CJFDLAST2016&filename=AQJS201604008&uid=WEEvREcwSlJHSldRa1FhdXNXa0d1Z3dCdDlTZHlJRnEzYTFCTlJzSmdFdz0=$9A4hF_YAuvQ5obgVAqNKPCYcEjKensW4IQMovwHtwkF4VYPoHbKxJw!!&v=MjU1MTZiSVI4ZVgxTHV4WVM3RGgxVDNxVHJXTTFGckNVUkxLZVplWnNGeTdrVXJ6T0pEekJmYkc0SDlmTXE0OUY=">The Vulnerability Analysis and Security Enhancement of Docker.</a> Information Security and Technology. 2016;4:008. (Chinese)</li>
+                </ul>
+
+                <h2>Extended rule reasoning and knowledge compilation method based on modal logic &nbsp;&nbsp;&nbsp;&nbsp;<span>04/2014 - 04/2015</span></h2>
+
+                <ul id="ulDetail">
+                    <li>The second principal in charge of this National Innovation Training Program.</li>
+                    <li>Leading weekly group discussions, studying modal logic knowledge and considering the optimization, then write ideas and project data into the paper.</li>
+                    <li><strong>Paper: </strong> Lizheng Ma，<strong>Xi Tan</strong>，Pei Huang，Li Bai, Ziyan Wu. &quot;Destructive Extension Rule In Propositional Model Logic S5 System&quot; International Conference on Information, Computer and Communication Engineering, 2015: icc-2003 (English)</li>
+                </ul>
+
+            </dd>
+
+            <dd class="clear"></dd>
+            
+            <dt>Research Interests</dt>
+            <dd>
+                <ul>
+                    <li>System Security and System Attack Model</li>
+                    <li>Virtulization Architecture and Security Enhancements</li>
+                    <li>Network and Information Security</li>
+                </ul>
+            </dd>
+
+            <dd class="clear"></dd>
+            
+            <dt>Coding Skills</dt>
+            <dd>
+                <ul>
+                    <li>Full stack &amp; rapid learning development skills.</li>
+                    <li>Coding in C, Python, PHP, Java, JavaScript.</li>
+                    <li>Data Visualization by using HighCharts &amp; Echartjs.</li>
+                    <li>Virtualization, operating system, and network security related coding.</li>
+                </ul>
+            </dd>
+            
+            <dd class="clear"></dd>
+            
+            <dt>Hobbies</dt>
+            <dd>
+                <strong><a href="https://www.jianshu.com/p/ef4eb960b435">Calligraphy</a> </strong><br />
+                        <!-- <p><img src='https://upload-images.jianshu.io/upload_images/1597817-85580866c8f7ca8d.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1000/format/webp'
+                                alt='Zhao Wei \"summer\"(Slender Gold)' referrerPolicy='no-referrer' /></p> -->                    
+                <strong><a href='https://www.jianshu.com/c/53a577282c36'>Poets</a></strong><br />
+                <strong><a>Technologies blogs(personal files)</a></strong><br />
+            </dd>
+            
+            <dd class="clear"></dd>
+        </dl>
+        
+        <div class="clear"></div>
+    
+    </div>
+
+</body>
+
+</html>
