@@ -56,7 +56,16 @@
                     <a class="nav-link js-scroll-trigger" href="#education">Education</a>
                 </li>
                 <li class="nav-item">
+                    <a class="nav-link js-scroll-trigger" href="#current">Current</a>
+                </li>
+                <li class="nav-item">
                     <a class="nav-link js-scroll-trigger" href="#experience">Experience</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link js-scroll-trigger" href="#CTF">CTF & Competitions</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link js-scroll-trigger" href="#publications">Publications</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link js-scroll-trigger" href="#skills">Skills</a>
@@ -96,7 +105,9 @@
 
                 <!-- <div>North Section of Yiyuan C1, NO.65, Xingshikou Road, Haidian, Beijing, CHINA · (+86)15600036188 · <a href="mailto:mintancy@hotmail.com">mintancy@hotmail.com</a>
                 </div> -->
-                <p class="lead mb-5">I am an energetic learner.</p>
+                <div><a href="mailto:xt3956@rit.edu">xt3956@rit.edu</a>
+                </div>
+                <p class="lead mb-5">No pains, no gains.</p>
             </div>
 
             <hr class="m-0">
@@ -123,10 +134,10 @@
                             <a href='http://www.ucas.ac.cn/'>Chinese Academy of Sciences</a> </h3>
                         <strong>Advisor:</strong> Bibo Tu<br />
                         <!-- <strong>GPA:</strong> 3.55/4.00<br /> -->
-                        <strong>Awards: </strong>Scholarships, Merit Student(2017)</p>
+                        <!-- <strong>Awards: </strong>Scholarships, Merit Student(2017)</p> -->
                     </div>
                     <div class="resume-date text-md-right">
-                        <span class="text-primary">Beijing, China 09/2016 - 07/2019</span>
+                        <span class="text-primary">Beijing, China 2019</span>
                     </div>
                 </div>
             
@@ -137,11 +148,11 @@
                         <strong>Major: </strong>Computer Science and Technology (Network and Information Security)<br />
                         <!-- <p> -->
                             <!-- <strong>GPA:</strong> 3.07/4.00<br /> -->
-                            <strong>Awards: </strong>Scholarships(each year); The winner of the
-                            "TW@JLUCTF2015" and "JluCTF2015"</p>
+                            <!-- <strong>Awards: </strong>Scholarships(each year); The winner of the -->
+                            <!-- "TW@JLUCTF2015" and "JluCTF2015"</p> -->
                     </div>
                     <div class="resume-date text-md-right">
-                        <span class="text-primary">Changchun, Jilin, China 09/2012-07/2016</span>
+                        <span class="text-primary">Changchun, Jilin, China 2016</span>
                     </div>
                 </div>
             
@@ -149,58 +160,48 @@
 
             <hr class="m-0">
 
+            <div class="my-auto" id="current">
+                <h2 class="mb-5">Current Research</h2>
+
+                <div class="resume-item d-flex flex-column flex-md-row mb-5">
+                    <div class="resume-content mr-auto">
+                        <h3 class="mb-0">System security with a focus on embedded systems</h3>
+                        <!-- <div class="subheading mb-3">Intelitec Solutions</div> -->
+                        <ul>
+                            <li>ARM Cortex-M embedded systems are widely used nowadays.  Due to their resource restrictionsand real-time properties,  security mechanisms are usually not provided on such system,  whichrenders them insecure.  My research goal is to enhance the security of such platforms via newnovel solutions at compiler (LLVM) and OS layers (using MPU, IDAU, etc).</li>
+                        </ul>
+                    </div>
+                    <div class="resume-date text-md-right">
+                        <span class="text-primary">08/2019 - Present</span>
+                    </div>
+                </div>
+
+            </div>
+
             <div class="my-auto" id="experience">
                 <h2 class="mb-5">Experience</h2>
 
                 <div class="resume-item d-flex flex-column flex-md-row mb-5">
                     <div class="resume-content mr-auto">
-                        <h3 class="mb-0">VMI-based Intrusion Detection System(VIDS)</h3>
+                        <h3 class="mb-0">Virtual Machine Introspection (VMI) Based Malware Detection</h3>
                         <!-- <div class="subheading mb-3">Intelitec Solutions</div> -->
                         <ul>
-                            <li>Analyzed kernel-based rootkits and learned about VMI</li>
-                            <li>Built a system contains VMI tools to detect rootkit activities(process-hiding,
-                                modules-hiding, Hooks, etc) for
-                                Linux and Windows VMs without an agent by using VMI and forensic technologies.</li>
-                            <li><strong>Invention Patent: </strong>A method and a system for virtual machine malware behavior
-                                detection (submitted,
-                                Chinese, 2018) </li>
+                            <li>Research significance and goals: There is no mature detection system for a variety kinds of virtualmachines (VMs) and putting agents in virtual machines costs much and hard to maintain.  Thisproject was to build a malware detection system (called it VIDS) for virtual machines includingLinux and Windows without agents.</li>
+                            <li>Challenges and solutions: 
+                                <ul>
+                                    <li>Communicating with VMs to access the memory by modifying QMP protocol of QEMU.</li>
+                                    <li>Reading memory of VMs outside of them without agents by using VMI conception.</li>
+                                    <li>Classifying the detection target by conclusion crucial kernel data structures based on Rootkits' functions (process-hiding, modules-hiding, syscall-hijack, etc) for both Linux (task_struct, kobject, etc.) and Windows (EPROCESS, etc.) systems.</li>
+                                    <li>Combining forensic technique with VMI technique to reach an online memory analysis to detect malware to fix the semantic gap problem.</li>
+                                </ul>
+                            </li>
+                            <li>Advantages: Transparent to VMs, accuracy detection, modular with python language, variety detection platforms including Linux and Windows.</li>
+                            <li>Disadvantages: Only memory related attacks detection, performance costs in host system, secure VMI.</li>
+                            <li>Extension project - <strong>Cloud Security Monitoring Center</strong>:  combined HIDS, NIDS, and VIDS to-gether to monitor the whole cloud environment including VMs, servers, and network traffics, alongwith a Data Visualization Platform to show the monitoring results.</li>
                         </ul>
                     </div>
                     <div class="resume-date text-md-right">
-                        <span class="text-primary">07/2017 - 09/2018</span>
-                    </div>
-                </div>
-
-                <div class="resume-item d-flex flex-column flex-md-row mb-5">
-                    <div class="resume-content mr-auto">
-                        <h3 class="mb-0">Cloud Security Monitoring Center</h3>
-                        <!-- <div class="subheading mb-3">Intelitec Solutions</div> -->
-                        <ul>
-                            <li>Analyzed the constructures and functions of Intrusion Detection.</li>
-                            <li>Designed an <strong>architecture</strong> which combines HIDS, NIDS, and VIDS to
-                                monitor the whole cloud
-                                environment, including the VMs, servers, and networks. </li> 
-                            <li> Developed a Data Visualization Platform to express the status of the monitor system.</li>
-                            <!-- <li>Next step: Planning to add evil file detection module in the VIDS to enhance detectability.</li>
-                            <li><strong>Paper: </strong>Monitoring in the cloud environment (preparing, Chinese, 2019)</li> -->
-                        </ul>
-                    </div>
-                    <div class="resume-date text-md-right">
-                        <span class="text-primary">01/2018 - 03/2019</span>
-                    </div>
-                </div>
-
-                <div class="resume-item d-flex flex-column flex-md-row mb-5">
-                    <div class="resume-content mr-auto">
-                        <h3 class="mb-0">Image-based Data Encryption Steganography and Forensics</h3>
-                        <!-- <div class="subheading mb-3">Intelitec Solutions</div> -->
-                        <ul>
-                            <li><strong>Bachelor’s Thesis</strong></li>
-                            <li>Embedding and extracting information from images by using bit operation and improved LSB algorithm.</li>
-                        </ul>
-                    </div>
-                    <div class="resume-date text-md-right">
-                        <span class="text-primary">01/2016 - 06/2016</span>
+                        <span class="text-primary">07/2017 - 11/2018</span>
                     </div>
                 </div>
 
@@ -209,14 +210,12 @@
                         <h3 class="mb-0">Online Experiment System Based on Hybrid Virtualization</h3>
                         <!-- <div class="subheading mb-3">Shout! Media Productions</div> -->
                         <ul>
-                            <li>Primary principal of this project (University Student Innovation Training Program).</li>
-                            <li>Researched LXC, Hypervisor, and other virtualization, and learn KVM and Docker&#39;s
-                                core architectures, then built a virtualization platform based on both to achieve
-                                the distribution and control of containers.</li>
-                            <li><strong>Paper: </strong>Wen-lin Y, <strong>Xi T</strong>, Jun-ting G, Shuo W. <a
+                            <li>A research project aim to help the security education: clients for students to do attack exercises, which should be lightweight and easy to maintain; servers for target drone and management. Focused on virtualization technologies, and learned KVM and Docker's core architectures.</li>
+                            <li>Built in B + C/S architecture with a virtualization platform based on KVM and Docker to achieve the distribution and control of containers.</li>
+                            <!-- <li><strong>Paper: </strong>Wen-lin Y, <strong>Xi T</strong>, Jun-ting G, Shuo W. <a
                                     href="http://kns.cnki.net/KCMS/detail/detail.aspx?dbcode=CJFQ&dbname=CJFDLAST2016&filename=AQJS201604008&uid=WEEvREcwSlJHSldRa1FhdXNXa0d1Z3dCdDlTZHlJRnEzYTFCTlJzSmdFdz0=$9A4hF_YAuvQ5obgVAqNKPCYcEjKensW4IQMovwHtwkF4VYPoHbKxJw!!&v=MjU1MTZiSVI4ZVgxTHV4WVM3RGgxVDNxVHJXTTFGckNVUkxLZVplWnNGeTdrVXJ6T0pEekJmYkc0SDlmTXE0OUY=">The
                                     Vulnerability Analysis and Security Enhancement of Docker.</a> Information
-                                Security and Technology. 2016;4:008. (Chinese)</li>
+                                Security and Technology. 2016;4:008. (Chinese)</li> -->
                         </ul>
                     </div>
                     <div class="resume-date text-md-right">
@@ -230,8 +229,9 @@
                         <!-- <h3 class="mb-0">Extended rule reasoning and knowledge compilation method based on modal logic</h3> -->
                         <!-- <div class="subheading mb-3">Shout! Media Productions</div> -->
                         <ul>
-                            <li>The second principal in charge of this National Innovation Training Program - "Extended rule reasoning and knowledge compilation method based on modal logic". <strong>Paper: </strong> Lizheng Ma，<strong>Xi Tan</strong>，Pei Huang，Li Bai, Ziyan Wu. &quot;Destructive Extension Rule In Propositional Model Logic S5 System&quot; International Conference on Information, Computer and Communication Engineering, 2015: icc-2003 (English)</li>
-                            <li>Some personal projects: SNL Compiler System Implementation (C++); Android Security and Practice (SDK); Web Attack and Defense Experiment...</li>
+                            <li>Image-based Data Encryption Stenography and Forensics with LSB algorithm (Bachelor's Thesis): Embedding and extracting information from images by using bit operation and improved LSB algorithm.</li>
+                            <li>Student achievement management system (C); Data structure course design (C ++); SNL compilation system implementation (C ++); Android security and practice (SDK); Web attack and defense experiments; Laravel framework CMS, etc .; Echarts big data visualization.</li>
+                            <!-- <li>The second principal in charge of this National Innovation Training Program - "Extended rule reasoning and knowledge compilation method based on modal logic". <strong>Paper: </strong> Lizheng Ma，<strong>Xi Tan</strong>，Pei Huang，Li Bai, Ziyan Wu. &quot;Destructive Extension Rule In Propositional Model Logic S5 System&quot; International Conference on Information, Computer and Communication Engineering, 2015: icc-2003 (English)</li> -->
                         </ul>
                     </div>
                     <div class="resume-date text-md-right">
@@ -242,29 +242,39 @@
             
             <hr class="m-0">
 
+            <div class="my-auto" id="CTF">
+                <h2 class="mb-5">CTE and Competitions</h2>
+                <ul>
+                    <li>08/2020 - Present: CTF training every week to improve hacking technologies, helping learners to solve problems, sometimes leading the meeting.</li>
+                    <li>2015 fall: Winner of the “JluCTF2015</li>
+                    <li>2015 summer: Winner of the “TW@JLUCTF2015”</li>
+                </ul>
+            </div>
+
+            <div class="my-auto" id="publications">
+                <h2 class="mb-5">Publications</h2>
+                <ul>
+                    <li>2018:  Bibo  Tu, <strong>Xi Tan</strong>,  Kun  Zhang.Methods and system for detecting malware behavior ofvirtual machine. Beijing: CN109597675A, 2019-04-09. </li>
+                    <li>2015: Wen-lin Y,Xi T, Jun-ting G, Shuo W.The Vulnerability Analysis and Security Enhancementof Docker.Information Security and Technology. 2016;4:008.</li>
+                    <li>2013: Lizheng Ma,Xi Tan, Pei Huang, Li Bai, Ziyan Wu.Extended rule reasoning and knowledgecompilation method based on modal logic. (Paper  for  National  Innovation  Training  Program:Destructive Extension Rule In Propositional Model)</li>
+                </ul>
+            </div>
+
             <div class="my-auto" id="skills">
                 <h2 class="mb-5">Skills</h2>
 
                 <div class="subheading mb-3">Coding skills</div>
-                <ul class="fa-ul mb-0">
-                    <li><i class="fa-li fa fa-check"></i>Full stack &amp; rapid learning development skills.</li>
-                    <li><i class="fa-li fa fa-check"></i>Coding in C, Python, PHP, Java, JavaScript.</li>
-                    <li><i class="fa-li fa fa-check"></i>Data Visualization by using HighCharts &amp; Echartjs.</li>
-                    <li><i class="fa-li fa fa-check"></i>Virtualization, operating system, and network security related coding.</li>
+                <ul>
+                    <li>Coding in C, C++, Standard Machine Language (SML), Python, PHP</li>
+                    <li>Data Visualization by using HighCharts & Echartjs.</li>
+                    <li>Virtualization, operating system, and network security related coding.</li>
                 </ul>
 
                 <div class="subheading mb-3">Interests</div>
                 <ul>
-                    <li>System Security and System Attack Model</li>
-                    <li>Virtulization Architecture and Security Enhancements</li>
-                    <li>Network & Information Security</li>
+                    <li>System Security, System Attack Model, and Network & Information Security.</li>
+                    <li>Virtualization Architecture and Security Enhancements.</li>
                 </ul>
-
-                <!-- <div class="subheading mb-3">Languages</div>
-                <ul>
-                    <li>TOEFL: 82(R22+L19+S20+W21)</li>
-                    <li>GRE: 306(V144+Q162+W3)</li>
-                </ul> -->
             </div>
 
             <hr class="m-0">
@@ -273,15 +283,12 @@
                 <h2 class="mb-5">Activities</h2>
             
                 <ul>
-                   <li>2018: Responsible for our group's dancing in the New Year's Gala at IIE, and we won the third prize.</li>
-                   <li>2017: Joined the calligraphy training class of the Art Center in UCAS as an assistant to the intermediate class,
-                    assisting the teacher to teach and distribute the teaching materials.</li>
-                    <li>2015: Helped to organize and participated in the Taiwan cross-strait exchange activities of Jilin University and the
-                    CTF named "TW@JluCTF2015".</li>
-                    <li>2014: Joined the core members of the Qihoo 360 Campus Club as the Minister of Management and Secretary to assist
-                    in the internal management and security training.</li>
-                    <li>2013: As the minister of the Etiquette Department and deputy minister of the Drama Department of Art Troupe,
-                    participated in the rehearsal of the welcome party for the freshmen, arranged for major event etiquette staff.</li>
+                   <li>2018:  Responsible for our lab’s dancing in the New Year’s Gala at IIE, gathered most of femaleresearchers of our lab and we won the third prize</li>
+                   <li>2017: Joined the calligraphy training class of the Art Center in UCAS as an assistant to the inter-mediate class, assisting the teacher to teach and distribute the teaching materials.</li>
+                    <li>2015:  Helped to organize and participated in the Taiwan cross-strait exchange activities of JilinUniversity, taking them to tour the campus especially the Department of Computer Sciences, intro-ducing the equipment and facilities in our department, discussing related computer technologies.Teamed up with the members from Taiwan for the friendly CTF named ”TW@JluCTF2015” andwon the first place.</li>
+                    <li>2014:  Joined the core members of the Qihoo 360 Campus Club as the Minister of Managementand Secretary to assist in the internal management and security training.</li>
+                    <li>2013: Minister of the Etiquette Department, participated in the rehearsal of the welcome party forfreshmen (undergraduates).</li>
+                    <li>2013: Deputy minister of the Drama Department of Art Troupe, training female etiquette staffs tosupport the major event (like ACM competitions).</li>
                 </ul>
             </div>
 
