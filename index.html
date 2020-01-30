@@ -22,15 +22,30 @@
     <!-- Custom styles for this template -->
     <link href="css/resume.min.css" rel="stylesheet">
 
-    <script>
-        var _hmt = _hmt || [];
-        (function () {
-            var hm = document.createElement("script");
-            hm.src = "https://hm.baidu.com/hm.js?993a1bab3ba9ca3344285936b28bd73b";
-            var s = document.getElementsByTagName("script")[0];
-            s.parentNode.insertBefore(hm, s);
-        })();
-    </script>
+    <style>
+        /* Create two unequal columns that floats next to each other */
+        .column {
+        float: left;
+        padding: 10px;
+        /* height: 300px; //Should be removed. Only for demonstration */
+        }
+
+        .left {
+        width: 75%;
+        }
+
+        .right {
+        width: 25%;
+        }
+
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+    </style>
+
+
 
 </head>
 
@@ -318,9 +333,9 @@
                     <strong>Arts: </strong>
                         <a href="https://www.jianshu.com/p/ef4eb960b435">calligraphy</a>, 
                         <a>drawings</a><br />
-                    <div class="resume-content d-flex flex-column flex-md-row">
-                        <div width="500"><img src='images/summer2.jpg' alt='Zhao Wei \"summer\"(Slender Gold)' referrerPolicy='no-referrer' height="300"; width="300"/></div>
-                        <div width="100"; right="100"; bottom="0";><script type="text/javascript" id="clustrmaps" src="//cdn.clustrmaps.com/map_v2.js?d=93TYgr1Cp6fZZJhq9uJ8h9pqrw2twgp_5TT45wjLZkA&cl=ffffff&w=a"></script></div>
+                    <div class="row">
+                        <div class="column left"><img src='images/summer2.jpg' alt='Zhao Wei \"summer\"(Slender Gold)' referrerPolicy='no-referrer' height="300"; width="300"/></div>
+                        <div class="column right"; bottom="0";><script type="text/javascript" id="clustrmaps" src="//cdn.clustrmaps.com/map_v2.js?d=93TYgr1Cp6fZZJhq9uJ8h9pqrw2twgp_5TT45wjLZkA&cl=ffffff&w=a"></script></div>
                     </div>
                     <!-- <div class="resume-date text-md-right"; bottom:0> -->
                         
