@@ -25,19 +25,22 @@
     <style>
         /* Create two unequal columns that floats next to each other */
         .column {
-        float: left;
-        padding: 10px;
+            float: left;
+            padding: 10px;
+            position: relative;
         /* height: 300px; //Should be removed. Only for demonstration */
         }
 
         .left {
-        width: 75%;
+            width: 75%;
         }
 
         .right {
-        width: 25%;
-        /* right: 0px; */
-        bottom: 0px;
+            position: absolute;
+            width: 25%;
+            /* right: 0px; */
+            bottom: 0;
+            left: 0;
         }
 
         .row:after {
